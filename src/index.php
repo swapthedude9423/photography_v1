@@ -1,15 +1,15 @@
 <?php
 // Include the database configuration file
-require_once './db/config.php';
+//require_once './db/config.php';
 
 // Establish database connection
-$conn = db_connect();
+//$conn = db_connect();
 
 // Fetch data from the database
 // Your database queries go here...
 
 // Close database connection
-db_close($conn);
+//db_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">

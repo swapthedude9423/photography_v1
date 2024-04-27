@@ -24,19 +24,26 @@
     // *********************************
     // :: 3.0 Welcome Slides Active Code
     // *********************************
-
+    
     if ($.fn.owlCarousel) {
         var welcomeSlider = $('.welcome-slides');
         welcomeSlider.owlCarousel({
             items: 1,
             loop: true,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
-            autoplayTimeout: 10000,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
             nav: true,
-            navText: [('<i class="ti-arrow-left"></i>'), ('<i class="ti-arrow-right"></i>')]
-        })
-
+            navText: [('<i class="ti-arrow-left"></i>'), ('<i class="ti-arrow-right"></i>')],
+            mouseDrag: false, // Disable mouse drag
+            touchDrag: false, // Disable touch drag
+            pullDrag: false, // Disable pull drag
+            freeDrag: false,
+            dots: true
+        });
+        var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '5px');
+        dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
         welcomeSlider.on('translate.owl.carousel', function () {
             var layer = $("[data-animation]");
             layer.each(function () {
@@ -64,6 +71,29 @@
         });
     }
 
+function initPannellumViewer(slide) {
+    var panoramaId = slide.find('[id^="panorama"]').attr('id');
+    var panoramaFile = slide.find('[id^="panorama"]').data('panorama');
+
+    if (panoramaId && panoramaFile) {
+        pannellum.viewer(panoramaId, {
+            "type": "equirectangular",
+            "panorama": panoramaFile,
+            "autoLoad": true,
+            "mouseZoom": false,
+            "showZoomCtrl": false,
+            "showFullscreenCtrl": false,
+            "border": false,
+            "draggable": true, // Enable dragging
+            "autoRotate": 0, // Disable auto-rotation
+            "northOffset": 0,
+            "backgroundColor": [0, 0, 0],
+            "compass": false
+        });
+    }
+}
+
+    
     // ************************************
     // :: 4.0 Instragram Slides Active Code
     // ************************************
@@ -74,6 +104,7 @@
             items: 6,
             loop: true,
             autoplay: true,
+            dots: true,
             smartSpeed: 1000,
             autoplayTimeout: 3000,
             responsive: {

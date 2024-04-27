@@ -1,15 +1,15 @@
 <?php
 // Include the database configuration file
-//require_once './db/config.php';
+require_once './db/config.php';
 
 // Establish database connection
-//$conn = db_connect();
+$conn = db_connect();
 
 // Fetch data from the database
 // Your database queries go here...
 
 // Close database connection
-//db_close($conn);
+db_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +30,6 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <link rel="stylesheet" href="style.css">
-
     <script type="text/javascript" src="./js/pannellum.js"></script>
 
 </head>
@@ -88,28 +87,10 @@
                             <div class="classynav">
                                 <ul id="nav">
                                     <li class="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="./about.html">About</a></li>
-                                    <li><a href="./gallery.html">Gallery</a></li>
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./360photo.php">360° Photo</a></li>
+                                    <li><a href="./360video.php">360° Video</a></li>
+                                    <li><a href="./portfolio.php">Portfolio</a></li>
+                                    <li><a href="./about.php">About</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -126,18 +107,21 @@
 
     <!-- Welcome Area Start -->
     <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
+        <div class="welcome-slides owl-carousel owl-theme">
         
-<!-- Single Slide -->
         <div class="single-welcome-slide bg-img bg-overlay">
             <div id="panorama1">
              <script>
                     pannellum.viewer('panorama1', {
                         "type": "equirectangular",
-                        "panorama": "./img/360view/360-panorana-of-empty-modern-interior-room-3d-rend-2023-11-27-04-53-12-utc.jpg",
+                        "panorama": "./img/360view/pano_1.jpg",
                         "autoLoad": true,
+                        "mouseZoom" : false,
+                        "showZoomCtrl": false,
+                        "showFullscreenCtrl": false,
                         "border": false,
                         "autoRotate": 4,
+                        "draggable": false,
                         "northOffset": 0,
                         "backgroundColor": ([0,0,0]),
                         "compass": false
@@ -150,9 +134,13 @@
              <script>
                     pannellum.viewer('panorama2', {
                         "type": "equirectangular",
-                        "panorama": "./img/360view/360 Pano 02.jpg",
+                        "panorama": "./img/360view/pano_3.jpg",
                         "autoLoad": true,
+                        "showZoomCtrl": false,
+                        "showFullscreenCtrl": false,
                         "border": false,
+                        "mouseZoom" : false,
+                        "draggable": false,
                         "autoRotate": 4,
                         "northOffset": 0,
                         "backgroundColor": ([0,0,0]),
@@ -161,41 +149,6 @@
                 </script>  
             </div>
         </div>
-            <!-- Single Slide -->
-            <!-- <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-lg-8 col-xl-6">
-                            <div class="welcome-text">
-                                <h2 data-animation="bounceInDown" data-delay="900ms">Hello <br>I'm Jackson</h2>
-                                <p data-animation="bounceInDown" data-delay="500ms">I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
-                                <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Get a Quote</a>
-                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">hello.alime@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Single Slide -->
-            <!-- <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-lg-8 col-xl-6">
-                            <div class="welcome-text">
-                                <h2 data-animation="bounceInUp" data-delay="100ms">Hello <br>I'm Alime</h2>
-                                <p data-animation="bounceInUp" data-delay="500ms">I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
-                                <div class="hero-btn-group" data-animation="bounceInUp" data-delay="900ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Get a Quote</a>
-                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">hello.alime@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- Welcome Area End -->
@@ -427,8 +380,6 @@
                         <!-- Copywrite Text -->
                         <div class="copywrite-text">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                         <!-- Footer Logo -->
                         <div class="footer-logo">

@@ -1,15 +1,15 @@
 <?php
 // Include the database configuration file
-require_once './db/config.php';
+//require_once './db/config.php';
 
 // Establish database connection
-$conn = db_connect();
+//$conn = db_connect();
 
 // Fetch data from the database
 // Your database queries go here...
 
 // Close database connection
-db_close($conn);
+//db_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,7 @@ db_close($conn);
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="./js/pannellum.js"></script>
 
@@ -48,10 +48,12 @@ db_close($conn);
                 <div class="modal-content">
                     <div class="modal-body">
                         <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i
+                                class="ti-close"></i></button>
                         <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                        <form action="index.php" method="post">
+                            <input type="search" name="top-search-bar" class="form-control"
+                                placeholder="Search and hit enter...">
                             <button type="submit">Search</button>
                         </form>
                     </div>
@@ -70,7 +72,7 @@ db_close($conn);
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="./index.php"><img src="./img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -86,15 +88,34 @@ db_close($conn);
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li class="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="./360photo.php">360° Photo</a></li>
-                                    <li><a href="./360video.php">360° Video</a></li>
-                                    <li><a href="./portfolio.php">Portfolio</a></li>
+                                    <li class="active"><a href="./index.php">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./index.php">- Home</a></li>
+                                            <li><a href="./about.php">- About</a></li>
+                                            <li><a href="./gallery.php">- Gallery</a></li>
+                                            <li><a href="./blog.php">- Blog</a></li>
+                                            <li><a href="./single-blog.php">- Blog Details</a></li>
+                                            <li><a href="./contact.php">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li><a href="./about.php">About</a></li>
+                                    <li><a href="./gallery.php">Gallery</a></li>
+                                    <li><a href="./blog.php">Blog</a></li>
+                                    <li><a href="./contact.php">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i
+                                        class="ti-search"></i></div>
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -108,30 +129,30 @@ db_close($conn);
     <!-- Welcome Area Start -->
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel owl-theme">
-        
-        <div class="single-welcome-slide bg-img bg-overlay">
-            <div id="panorama1">
-             <script>
+
+            <div class="single-welcome-slide bg-img bg-overlay">
+                <div id="panorama1">
+                    <script>
                     pannellum.viewer('panorama1', {
                         "type": "equirectangular",
                         "panorama": "./img/360view/pano_1.jpg",
                         "autoLoad": true,
-                        "mouseZoom" : false,
+                        "mouseZoom": false,
                         "showZoomCtrl": false,
                         "showFullscreenCtrl": false,
                         "border": false,
                         "autoRotate": 4,
                         "draggable": false,
                         "northOffset": 0,
-                        "backgroundColor": ([0,0,0]),
+                        "backgroundColor": ([0, 0, 0]),
                         "compass": false
-                        }); 
-                </script>  
+                    });
+                    </script>
+                </div>
             </div>
-        </div>
-        <div class="single-welcome-slide bg-img bg-overlay">
-            <div id="panorama2">
-             <script>
+            <div class="single-welcome-slide bg-img bg-overlay">
+                <div id="panorama2">
+                    <script>
                     pannellum.viewer('panorama2', {
                         "type": "equirectangular",
                         "panorama": "./img/360view/pano_3.jpg",
@@ -139,16 +160,16 @@ db_close($conn);
                         "showZoomCtrl": false,
                         "showFullscreenCtrl": false,
                         "border": false,
-                        "mouseZoom" : false,
+                        "mouseZoom": false,
                         "draggable": false,
                         "autoRotate": 4,
                         "northOffset": 0,
-                        "backgroundColor": ([0,0,0]),
+                        "backgroundColor": ([0, 0, 0]),
                         "compass": false
-                        }); 
-                </script>  
+                    });
+                    </script>
+                </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- Welcome Area End -->
@@ -173,112 +194,134 @@ db_close($conn);
 
             <div class="row alime-portfolio">
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/3.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/3.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/3.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/4.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/4.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/5.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/6.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/6.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/6.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/7.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/7.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/7.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/8.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/8.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/8.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/10.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/10.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/10.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/9.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/9.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/9.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/36.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/36.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/36.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/37.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/37.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/37.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/5.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -379,7 +422,15 @@ db_close($conn);
                     <div class="footer-content d-flex align-items-center justify-content-between">
                         <!-- Copywrite Text -->
                         <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                                </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                    aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                    target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
                         </div>
                         <!-- Footer Logo -->
                         <div class="footer-logo">

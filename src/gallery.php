@@ -34,7 +34,7 @@
                         <!-- Close -->
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
                         <!-- Form -->
-                        <form action="index.html" method="post">
+                        <form action="index.php" method="post">
                             <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
                             <button type="submit">Search</button>
                         </form>
@@ -54,7 +54,7 @@
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="./index.php"><img src="./img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -70,15 +70,15 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./index.php">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="./index.php">- Home</a></li>
+                                            <li><a href="./about.php">- About</a></li>
+                                            <li><a href="./gallery.php">- Gallery</a></li>
+                                            <li><a href="./blog.php">- Blog</a></li>
+                                            <li><a href="./single-blog.php">- Blog Details</a></li>
+                                            <li><a href="./contact.php">- Contact</a></li>
                                             <li><a href="#">- Dropdown</a>
                                                 <ul class="dropdown">
                                                     <li><a href="#">- Dropdown Item</a></li>
@@ -89,10 +89,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="./about.html">About</a></li>
-                                    <li><a href="./gallery.html">Gallery</a></li>
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li class="active"><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./about.php">About</a></li>
+                                    <li class="active"><a href="./gallery.php">Gallery</a></li>
+                                    <li><a href="./blog.php">Blog</a></li>
+                                    <li><a href="./contact.php">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -113,11 +113,11 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">Contact</h2>
+                        <h2 class="page-title">Gallery</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                                <li class="breadcrumb-item"><a href="index.php"><i class="icon_house_alt"></i> Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
                             </ol>
                         </nav>
                     </div>
@@ -127,46 +127,154 @@
     </section>
     <!-- Breadcrumb Area End -->
 
-    <!-- Contact Area Start -->
-    <div class="contact-area section-padding-80-50">
-        <div class="container">
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 clearfix">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h2 class="contact-title mb-30">Let’s Work <br>Together</h2>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Email</p>
-                        <a href="mailto:info.deercreative@gmail.com">info.deercreative@gmail.com</a>
-                    </div>
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Call Us</p>
-                        <a href="#">+6511.188.888</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Visit Us</p>
-                        <a href="#">60-49 Road 11378 New York</a>
+                <div class="col-12">
+                    <!-- Projects Menu -->
+                    <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
+                        <div class="portfolio-menu text-center">
+                            <button class="btn active" data-filter="*">All</button>
+                            <button class="btn" data-filter=".human">Human</button>
+                            <button class="btn" data-filter=".nature">Nature</button>
+                            <button class="btn" data-filter=".country">Country</button>
+                            <button class="btn" data-filter=".video">Video</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Contact Area End -->
 
-    <!-- Map Area Start -->
-    <div class="map-area section-padding-0-80">
-        <div class="container">
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12309.440717226664!2d24.094896788114085!3d56.9484200464499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb0e5073ded%3A0x400cfcd68f2fe30!2sRiga%2C+Latvia!5e0!3m2!1sen!2sbd!4v1550835159592" allowfullscreen></iframe>
+            <div class="row alime-portfolio">
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/39.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/39.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/40.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/40.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/41.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/41.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/42.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/42.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/43.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/43.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/44.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/44.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/45.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/45.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/46.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/46.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/47.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/47.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/48.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/48.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/49.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/49.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/50.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/50.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+                    <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Map Area End -->
+    <!-- Gallery Area End -->
 
     <!-- Follow Area Start -->
     <div class="follow-area clearfix">

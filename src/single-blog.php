@@ -34,7 +34,7 @@
                         <!-- Close -->
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
                         <!-- Form -->
-                        <form action="index.html" method="post">
+                        <form action="index.php" method="post">
                             <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
                             <button type="submit">Search</button>
                         </form>
@@ -54,7 +54,7 @@
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="./index.php"><img src="./img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -70,15 +70,15 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./index.php">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="./index.php">- Home</a></li>
+                                            <li><a href="./about.php">- About</a></li>
+                                            <li><a href="./gallery.php">- Gallery</a></li>
+                                            <li><a href="./blog.php">- Blog</a></li>
+                                            <li><a href="./single-blog.php">- Blog Details</a></li>
+                                            <li><a href="./contact.php">- Contact</a></li>
                                             <li><a href="#">- Dropdown</a>
                                                 <ul class="dropdown">
                                                     <li><a href="#">- Dropdown Item</a></li>
@@ -89,10 +89,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="./about.html">About</a></li>
-                                    <li><a href="./gallery.html">Gallery</a></li>
-                                    <li class="active"><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./about.php">About</a></li>
+                                    <li><a href="./gallery.php">Gallery</a></li>
+                                    <li class="active"><a href="./blog.php">Blog</a></li>
+                                    <li><a href="./contact.php">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->

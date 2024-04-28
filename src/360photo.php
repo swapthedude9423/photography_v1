@@ -30,6 +30,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <!-- Template Main CSS Files -->
     <link href="assets/css/variables.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
@@ -40,8 +41,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <script type="text/javascript" src="./js/pannellum.js"></script>
-    <!-- Image slider JS file -->
-    <script src="./js/script.js" defer></script>
+
 
 </head>
 
@@ -141,7 +141,7 @@
 
     <section class="welcome-area">
 
-        <div class="welcome-slides owl-carousel">
+        <div class="welcome-slides owl-carousel owl-theme">
 
 
             <div class="single-welcome-slide bg-img bg-overlay" style="height: 600px;">
@@ -150,7 +150,7 @@
                     <script>
                     pannellum.viewer('panorama1', {
                         "type": "equirectangular",
-                        "panorama": "./img/360view/360-panorana-of-empty-modern-interior-room-3d-rend-2023-11-27-04-53-12-utc.jpg",
+                        "panorama": "./img/360view/Pano_1.jpg",
                         "autoLoad": true,
                         "border": false,
                         "autoRotate": 4,
@@ -172,7 +172,7 @@
                     <script>
                     pannellum.viewer('panorama2', {
                         "type": "equirectangular",
-                        "panorama": "./img/360view/360 Pano 02.jpg",
+                        "panorama": "./img/360view/pano_2.jpg",
                         "autoLoad": true,
                         "border": false,
                         "autoRotate": 4,
@@ -575,7 +575,8 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
-
+    <!-- Image slider JS file -->
+    <script src="js/script.js" defer></script>
 
 
 </body>

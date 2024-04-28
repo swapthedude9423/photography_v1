@@ -28,7 +28,7 @@
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="./js/pannellum.js"></script>
 
@@ -128,7 +128,7 @@
 
     <!-- Welcome Area Start -->
     <section class="welcome-area">
-<div class="welcome-slides owl-carousel owl-theme">
+        <div class="welcome-slides owl-carousel owl-theme">
 
             <div class="single-welcome-slide bg-img bg-overlay">
                 <div id="panorama1">
@@ -137,42 +137,42 @@
                         "type": "equirectangular",
                         "panorama": "./img/360view/pano_1.jpg",
                         "autoLoad": true,
-"mouseZoom" : false,
+                        "mouseZoom": false,
                         "showZoomCtrl": false,
                         "showFullscreenCtrl": false,
                         "border": false,
                         "autoRotate": 4,
-"draggable": false,
+                        "draggable": false,
                         "northOffset": 0,
-                        "backgroundColor": ([0,0,0]),
+                        "backgroundColor": ([0, 0, 0]),
                         "compass": false
                     });
                     </script>
                 </div>
             </div>
-<div class="single-welcome-slide bg-img bg-overlay">
+            <div class="single-welcome-slide bg-img bg-overlay">
                 <div id="panorama2">
                     <script>
                     pannellum.viewer('panorama2', {
                         "type": "equirectangular",
                         "panorama": "./img/360view/pano_3.jpg",
                         "autoLoad": true,
-"showZoomCtrl": false,
+                        "showZoomCtrl": false,
                         "showFullscreenCtrl": false,
                         "border": false,
-"mouseZoom" : false,
+                        "mouseZoom": false,
                         "draggable": false,
                         "autoRotate": 4,
                         "northOffset": 0,
-                        "backgroundColor": ([0,0,0]),
+                        "backgroundColor": ([0, 0, 0]),
                         "compass": false
                     });
                     </script>
-</div>
+                </div>
             </div>
         </div>
     </section>
-<!-- Welcome Area End -->
+    <!-- Welcome Area End -->
 
     <!-- Gallery Area Start -->
     <div class="alime-portfolio-area section-padding-80 clearfix">
@@ -186,7 +186,7 @@
                             <button class="btn" data-filter=".human">Human</button>
                             <button class="btn" data-filter=".nature">Nature</button>
                             <button class="btn" data-filter=".country">Country</button>
-<button class="btn" data-filter=".video">Video</button>
+                            <button class="btn" data-filter=".video">Video</button>
                         </div>
                     </div>
                 </div>
@@ -210,8 +210,8 @@
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
-                        <img src="img/bg-img/4.jpg" alt="">
-                        <!-- <div class="hover-content">
+                            <img src="img/bg-img/4.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -221,9 +221,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
                     data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/5.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -233,9 +233,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
                     data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/6.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/6.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/6.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -245,9 +245,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/7.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/7.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/7.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -257,9 +257,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/8.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/8.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/8.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -269,9 +269,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
                     data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/10.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/10.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/10.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -281,9 +281,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
                     data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/9.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/9.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/9.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -293,9 +293,9 @@
                 <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/36.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/36.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/36.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -305,9 +305,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/37.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/37.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/37.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>
@@ -317,9 +317,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
                     data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                    <a href="./360photo.php">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <!-- <div class="hover-content">
+                        <a href="./360photo.php">
+                            <img src="img/bg-img/5.jpg" alt="">
+                            <!-- <div class="hover-content">
                             <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
                         </div> -->
                     </div>

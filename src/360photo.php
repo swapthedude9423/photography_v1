@@ -576,7 +576,7 @@
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
     <!-- Image slider JS file -->
-    <script src="js/script.js" defer></script>
+    <script src="js/script2.js" defer></script>
 
 
 </body>

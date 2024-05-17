@@ -183,10 +183,10 @@
                     <div class="alime-projects-menu">
                         <div class="portfolio-menu text-center">
                             <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".human">Human</button>
-                            <button class="btn" data-filter=".nature">Nature</button>
-                            <button class="btn" data-filter=".country">Country</button>
-                            <button class="btn" data-filter=".video">Video</button>
+                            <button class="btn" data-filter=".cityscapes">Cityscapes</button>
+                            <button class="btn" data-filter=".events">Events</button>
+                            <button class="btn" data-filter=".travel">Travel</button>
+                            <button class="btn" data-filter=".360vr">360° VR</button>
                         </div>
                     </div>
                 </div>
@@ -194,43 +194,42 @@
 
             <div class="row alime-portfolio">
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item events mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <a href="./360photo.php">
                             <img src="img/bg-img/3.jpg" alt="">
-                            <!-- <div class="hover-content">
-                            <a href="img/bg-img/3.jpg" class="portfolio-img">+</a>
-                        </div> -->
+                            <div class="hover-content">
+                            <a href="./360photo.php">Wedding shoot at Lavasa</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item 360vr cityscapes mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
                             <img src="img/bg-img/4.jpg" alt="">
-                            <!-- <div class="hover-content">
-                            <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
-                        </div> -->
+                            <div class="hover-content">
+                            <a href="./360photo.php">Pre-wedding</a>
+                        </div> 
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item travel mb-30 wow fadeInUp"
                     data-wow-delay="500ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
                             <img src="img/bg-img/5.jpg" alt="">
-                            <!-- <div class="hover-content">
-                            <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
-                        </div> -->
+                            <div class="hover-content">
+                            <a href="./360photo.php">Pre-wedding</a>
+                        </div> 
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item cityscapes mb-30 wow fadeInUp"
                     data-wow-delay="700ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -242,7 +241,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item events mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -254,7 +253,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item 360vr travel mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -266,7 +265,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item cityscapes mb-30 wow fadeInUp"
                     data-wow-delay="500ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -278,7 +277,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item events mb-30 wow fadeInUp"
                     data-wow-delay="700ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -290,7 +289,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-6 single_gallery_item 360vr travel mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -302,7 +301,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item cityscapes mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
@@ -314,7 +313,7 @@
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item travel mb-30 wow fadeInUp"
                     data-wow-delay="500ms">
                     <div class="single-portfolio-content">
                         <a href="./360photo.php">
